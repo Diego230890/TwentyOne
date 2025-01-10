@@ -37,7 +37,6 @@ void Game::run(){
 
     while( loop ){    
         std::cout << phrases[ "main info" ] << std::endl;
-        //std::cin.ignore();
         std::getline( std::cin, option );
 
         if( option == commands[ "help command" ] ){
@@ -51,7 +50,6 @@ void Game::run(){
         else if( option == commands[ "play command" ] ){
             while( loop ){
                 std::cout << phrases[ "main info" ] << std::endl;
-               // std::cin.ignore();
                 std::getline( std::cin, option );
 
                 if( option == commands[ "help command" ] ){ help(); }
